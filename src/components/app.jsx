@@ -10,7 +10,7 @@ const App = (props) => {
   //   divName: "RTL",
   // };
 
-  const [side, setSide] = useState(initialState);
+  // const [side, setSide] = useState(initialState);
 
   // const ChangeRtl = (divName) => {
   //   if (divName === "RTL") {
