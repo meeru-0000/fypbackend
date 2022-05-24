@@ -5,22 +5,6 @@ import Footer from "./common/footer";
 import Header from "./common/header_components/header";
 
 const App = (props) => {
-  // const initialState = {
-  //   ltr: true,
-  //   divName: "RTL",
-  // };
-
-  // const [side, setSide] = useState(initialState);
-
-  // const ChangeRtl = (divName) => {
-  //   if (divName === "RTL") {
-  //     document.body.classList.add("rtl");
-  //     setSide({ divName: "LTR" });
-  //   } else {
-  //     document.body.classList.remove("rtl");
-  //     setSide({ divName: "RTL" });
-  //   }
-  // };
   return (
     <div>
       <div className="page-wrapper">

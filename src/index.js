@@ -6,7 +6,7 @@ import App from "./components/app";
 import PerfectScrollbar from "react-perfect-scrollbar";
 
 // Components
-import Dashboard from "./components/dashboard" ;
+import Dashboard from "./components/dashboard";
 
 // Products physical
 import Category from "./components/products/physical/category";
@@ -48,158 +48,154 @@ import Datatable from "./components/common/datatable";
 import Login from "./components/auth/login";
 
 const Root = () => {
-	return (
-		<BrowserRouter basename={"/"}>
-			<PerfectScrollbar>
-				<Switch>
-					<Route exact path={`${process.env.PUBLIC_URL}/`} component={Login} />
-					<Route
-						exact
-						path={`${process.env.PUBLIC_URL}/auth/login`}
-						component={Login}
-					/>
+  return (
+    <BrowserRouter basename={"/"}>
+      <PerfectScrollbar>
+        <Switch>
+          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Login} />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/auth/login`}
+            component={Login}
+          />
 
-					<App>
-						<Route
-							path={`${process.env.PUBLIC_URL}/dashboard`}
-							component={Dashboard}
-						/>
+          <App>
+            <Route
+              path={`${process.env.PUBLIC_URL}/dashboard`}
+              component={Dashboard}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/physical/category`}
-							component={Category}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/physical/sub-category`}
-							component={Sub_category}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/physical/product-list`}
-							component={Product_list}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/physical/product-detail`}
-							component={Product_detail}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/physical/add-product`}
-							component={Add_product}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/physical/category`}
+              component={Category}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/physical/sub-category`}
+              component={Sub_category}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/physical/product-list`}
+              component={Product_list}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/physical/product-detail`}
+              component={Product_detail}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/physical/add-product`}
+              component={Add_product}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/digital/digital-category`}
-							component={Digital_category}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/digital/digital-sub-category`}
-							component={Digital_sub_category}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/digital/digital-product-list`}
-							component={Digital_pro_list}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/products/digital/digital-add-product`}
-							component={Digital_add_pro}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/digital/digital-category`}
+              component={Digital_category}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/digital/digital-sub-category`}
+              component={Digital_sub_category}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/digital/digital-product-list`}
+              component={Digital_pro_list}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/products/digital/digital-add-product`}
+              component={Digital_add_pro}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/sales/orders`}
-							component={Orders}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/sales/transactions`}
-							component={Transactions_sales}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/sales/orders`}
+              component={Orders}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/sales/transactions`}
+              component={Transactions_sales}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/coupons/list-coupons`}
-							component={ListCoupons}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/coupons/create-coupons`}
-							component={Create_coupons}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/coupons/list-coupons`}
+              component={ListCoupons}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/coupons/create-coupons`}
+              component={Create_coupons}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/pages/list-page`}
-							component={ListPages}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/pages/create-page`}
-							component={Create_page}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/pages/list-page`}
+              component={ListPages}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/pages/create-page`}
+              component={Create_page}
+            />
 
-						<Route path={`${process.env.PUBLIC_URL}/media`} component={Media} />
+            <Route path={`${process.env.PUBLIC_URL}/media`} component={Media} />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/menus/list-menu`}
-							component={List_menu}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/menus/create-menu`}
-							component={Create_menu}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/menus/list-menu`}
+              component={List_menu}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/menus/create-menu`}
+              component={Create_menu}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/users/list-user`}
-							component={List_user}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/users/create-user`}
-							component={Create_user}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/users/list-user`}
+              component={List_user}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/users/create-user`}
+              component={Create_user}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/vendors/list_vendors`}
-							component={List_vendors}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/vendors/create-vendors`}
-							component={Create_vendors}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/vendors/list_vendors`}
+              component={List_vendors}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/vendors/create-vendors`}
+              component={Create_vendors}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/localization/transactions`}
-							component={Translations}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/localization/currency-rates`}
-							component={Rates}
-						/>
-						<Route
-							path={`${process.env.PUBLIC_URL}/localization/taxes`}
-							component={Taxes}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/localization/transactions`}
+              component={Translations}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/localization/currency-rates`}
+              component={Rates}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/localization/taxes`}
+              component={Taxes}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/reports/report`}
-							component={Reports}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/reports/report`}
+              component={Reports}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/settings/profile`}
-							component={Profile}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/settings/profile`}
+              component={Profile}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/invoice`}
-							component={Invoice}
-						/>
+            <Route
+              path={`${process.env.PUBLIC_URL}/invoice`}
+              component={Invoice}
+            />
 
-						<Route
-							path={`${process.env.PUBLIC_URL}/data-table`}
-							component={Datatable}
-						/>
-					</App>
-				</Switch>
-			</PerfectScrollbar>
-		</BrowserRouter>
-	);
+            <Route
+              path={`${process.env.PUBLIC_URL}/data-table`}
+              component={Datatable}
+            />
+          </App>
+        </Switch>
+      </PerfectScrollbar>
+    </BrowserRouter>
+  );
 };
 
 ReactDOM.render(<Root />, document.getElementById("root"));
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
